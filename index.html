@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <table>
+            <caption style="color: green;">This Website is According to this Grading Scale</caption>
+            <thead>
+                <tr>
+                    <th>Grade</th>
+                    <th>GPA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A+</td>
+                    <td>4.00</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>3.75</td>
+                </tr>
+                <tr>
+                    <td>A-</td>
+                    <td>3.50</td>
+                </tr>
+                <tr>
+                    <td>B+</td>
+                    <td>3.25</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>3.00</td>
+                </tr>
+                <tr>
+                    <td>B-</td>
+                    <td>2.75</td>
+                </tr>
+                <tr>
+                    <td>C+</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>2.25</td>
+                </tr>
+                <tr>
+                    <td>C-</td>
+                    <td>2.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <span id="icon" onclick="openNav()">&#128221;</span>
+    <div class="main">
+        <h1>CGPA Calculator</h1>
+    </div>
+    <div class="body-part">
+        <div id="course-container">
+            <div class="course-section">
+                <input type="text" class="c-name" placeholder="Enter Course Name...">
+                <input type="number" class="credit" placeholder="Enter Course Credit...">
+                <input type="number" class="cgpa" placeholder="Enter CGPA...">
+            </div>
+        </div>
+        <button id="add-course-btn" onclick="addCourse()"><i class="fa-solid fa-plus"></i> Add Course</button>
+        <button type="submit" id="submit-btn" onclick="calculate()"><box-icon type='solid' name='calculator'></box-icon> Calculate CGPA</button>
+        <button type="button" id="print" onclick="printResult()"><box-icon name='printer'></box-icon> Print Result</button>
+        <button type="button" id="newSem" onclick="newSemester()"><box-icon type='solid' name='comment-add'></box-icon> Add Semester</button>
+
+
+    </div>
+
+    <div id="show"></div>
+    <div id="print-section"></div>
+    <div id="second-sem">
+        <div id="divs">
+
+        </div>
+        <p id="result2" style="text-align: center;color:green;font-size: 30px;font-size: 30px;">
+
+        </p>
+        
+    </div>
+    <div id="print-section2"></div>
+
+    <div id="third-sem">
+        <div id="divs2">
+
+        </div>
+        <p id="result3" style="text-align: center;color:green;font-size: 30px;font-size: 30px;">
+
+        </p>
+        
+    </div>
+    <div id="print-section3"></div>
+    
+    <div id="fourth-sem">
+        <div id="divs3">
+
+        </div>
+        <p id="result4" style="text-align: center;color:green;font-size: 30px;font-size: 30px;">
+
+        </p>
+        
+    </div>
+    <div id="print-section4"></div>
+    
+    <div id="fifth-sem">
+        <div id="divs4">
+
+        </div>
+        <p id="result5" style="text-align: center;color:green;font-size: 30px;font-size: 30px;">
+
+        </p>
+        
+    </div>
+    <div id="print-section5"></div>
+    <div id="sixth-sem">
+        <div id="divs5">
+
+        </div>
+        <p id="result6" style="text-align: center;color:green;font-size: 30px;font-size: 30px;">
+
+        </p>
+        
+    </div>
+    <div id="print-section6"></div>
+    <div id="seventh-sem">
+        <div id="divs6">
+
+        </div>
+        <p id="result7" style="text-align: center;color:green;font-size: 30px;font-size: 30px;">
+
+        </p>
+        
+    </div>
+    <div id="print-section7"></div>
+    <div id="eighth-sem">
+        <div id="divs7">
+
+        </div>
+        <p id="result8" style="text-align: center;color:green;font-size: 30px;font-size: 30px;">
+
+        </p>
+        
+    </div>
+    <div id="print-section8"></div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

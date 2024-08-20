@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Charm:wght@400;700&family=Jersey+10&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kalnia+Glaze:wght@100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mooli&family=PT+Sans+Narrow:wght@400;700&family=Patrick+Hand+SC&family=Roboto+Slab:wght@100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Teko:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    font-family: "Jersey 10", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+
+.main h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4b6584;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.body-part,#second-sem{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.body-part input, #second-sem input {
+    padding: 10px;
+    border: 2px solid #d1d8e0;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.body-part input:focus, #second-sem input:focus {
+    outline: none;
+    border-color: #4b6584;
+    box-shadow: 0 0 5px rgba(75, 101, 132, 0.5);
+}
+
+#submit-btn, #submit-btn2,#submit-btn3, #submit-btn4,#submit-btn5, #submit-btn6,#submit-btn7, #submit-btn8{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4b6584;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#add-course-btn,#add-course-btn2,#add-course-btn3, #add-course-btn4, #add-course-btn5, #add-course-btn6, #add-course-btn7, #add-course-btn8{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: rgb(13, 118, 13);
+}
+#print, #print2, #print3, #print4,#print5, #print6, #print7, #print8{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: rgb(76, 6, 95);
+}
+
+#newSem, #newSem2, #newSem3, #newSem4,#newSem5, #newSem6, #newSem7, #newSem8{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: rgb(221, 97, 8);
+}
+
+#submit-btn:hover, #submit-btn2:hover {
+    background-color: #3a4c6b;
+}
+#add-course-btn:hover, #add-course-btn2:hover {
+    background-color: #069a3c;
+}
+#add-course-btn2,#submit-btn2, #print2, #newSem2, #print3, #newSem3,#submit-btn3, #add-course-btn4,#add-course-btn5,#add-course-btn6,#add-course-btn7,#add-course-btn8{
+    width: 100%;
+}
+
+#print:hover{
+    background-color: rgb(154, 33, 188);
+}
+#newSem:hover{
+    background-color: rgb(140, 61, 4);
+}
+
+
+#show {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #4b6584;
+    text-align: center;
+    font-size: bold;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.2rem;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #dddddd;
+}
+
+th {
+    background-color: #4b6584;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:nth-child(odd) {
+    background-color: #201d1d;
+    color: white;
+}
+
+#print,  #print2, #print3, #print4,#print5,  #print6, #print7, #print8  {
+    display: none;
+}
+#icon{
+    font-size: 40px;
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #0869e0;
+    background:linear-gradient(#49a76c,#3f5570);
+    padding: 2px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px green;
+    z-index: 1000;
+    border:1px solid green;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+#icon:hover{
+    box-shadow: 0 4px 8px red;
+    border:1px solid red;
+}
